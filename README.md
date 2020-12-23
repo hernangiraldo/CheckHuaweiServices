@@ -21,6 +21,33 @@ CheckHuaweiServices.checkHuaweiServicesAvailability(successCallback, failureCall
 - `successCallback({ status: boolean})` status will be `true` if the device is a Huawei device without Google Services.
 - `failureCallback(error:string)` is called if there was an error checking if the device has or not Google Services.
 
+## Usage in Ionic
+
+On service or component when you are going to use the plugin:
+
+```
+ declare const CheckHuaweiServices;
+
+ @Component({...}) //It must be a @Injectable()
+ export class Component {
+
+    validateHuaweiServices() {
+      return new Promise((res, rej) => {
+        CheckHuaweiServices.checkHuaweiServicesAvailability(
+          ({ status }) => res(status),
+          (err) => rej(err)
+        )
+      })
+    }
+
+    yourFunc() {
+      this.validateHuaweiServices()
+        .then(...)
+        .catch(...)
+    }
+ }
+```
+
 ## Contributing
 
 1. Fork it
