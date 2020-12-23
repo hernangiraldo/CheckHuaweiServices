@@ -9,6 +9,10 @@ Use this plugin to check if an android device has the `Huawei Services` availabl
 ```
 cordova plugin add https://github.com/hernangiraldo/CheckHuaweiServices.git
 ```
+or
+```
+cordova plugin add cordova-plugin-check-huawei-services
+```
 
 ## Usage in Javascript
 
