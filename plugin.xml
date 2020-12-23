@@ -6,6 +6,9 @@
   <keywords>cordova,android,huawei,huawei services, plugin</keywords>
 
   <license>MIT</license>
+  
+  <repo>https://github.com/hernangiraldo/CheckHuaweiServices</repo>
+  <issue>https://github.com/hernangiraldo/CheckHuaweiServices/issues</issue>
 
   <js-module name="CheckHuaweiServices" src="www/CheckHuaweiServices.js">
     <clobbers target="CheckHuaweiServices" />
