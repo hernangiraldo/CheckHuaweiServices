@@ -28,7 +28,7 @@ On service or component when you are going to use the plugin:
 ```
  declare const CheckHuaweiServices;
 
- @Component({...}) //It must be a @Injectable()
+ @Component({...}) //It could be a @Injectable()
  export class Component {
 
     validateHuaweiServices() {
