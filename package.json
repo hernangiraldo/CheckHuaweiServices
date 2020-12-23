@@ -1,5 +1,5 @@
 {
-  "name": "cordova-plugin-checkHuaweiServices",
+  "name": "cordova-plugin-check-huawei-services",
   "version": "1.0.0",
   "description": "Use this plugin to check if an android device has the `Huawei Services` available. It would be helpful if you want to check if the device is a Huawei without `Google Services`.",
   "cordova": {
@@ -17,5 +17,9 @@
     "huawei services"
   ],
   "author": "Hernán Giraldo",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/hernangiraldo/CheckHuaweiServices"
+  },
   "license": "MIT"
 }
