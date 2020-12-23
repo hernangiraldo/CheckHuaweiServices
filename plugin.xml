@@ -1,11 +1,14 @@
 <?xml version='1.0' encoding='utf-8'?>
-<plugin id="cordova-plugin-checkHuaweiServices" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+<plugin id="cordova-plugin-checkHuaweiServices" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
   <name>CheckHuaweiServices</name>
   <author>Hernán Giraldo</author>
   <description>Cordova Plugin to check Huawei Services Availability</description>
   <keywords>cordova,android,huawei,huawei services, plugin</keywords>
 
   <license>MIT</license>
+  
+  <repo>https://github.com/hernangiraldo/CheckHuaweiServices</repo>
+  <issue>https://github.com/hernangiraldo/CheckHuaweiServices/issues</issue>
 
   <js-module name="CheckHuaweiServices" src="www/CheckHuaweiServices.js">
     <clobbers target="CheckHuaweiServices" />
