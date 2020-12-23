@@ -38,9 +38,9 @@ public class CheckHuaweiServices extends CordovaPlugin {
 
             if (HuaweiApiAvailability.getInstance().isHuaweiMobileServicesAvailable(context) == ConnectionResult.SUCCESS) {
               json.put("status", true);
+            } else {
+                json.put("status", false);
             }
-
-            json.put("status", false);
 
             callbackContext.success(json);
         } catch (Exception error) {
