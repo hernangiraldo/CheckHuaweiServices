@@ -32,12 +32,11 @@ public class CheckHuaweiServices extends CordovaPlugin {
     private void checkHuaweiServicesAvailability(Context context, CallbackContext callbackContext) {
         try {
             JSONObject json = new JSONObject();
-            if (GoogleApiAvailability.getInstance().isGooglePlayServicesAvailable(context) == com.google.android.gms.common.ConnectionResult.SUCCESS) {
-              json.put("status", false);
-            }
 
-            if (HuaweiApiAvailability.getInstance().isHuaweiMobileServicesAvailable(context) == ConnectionResult.SUCCESS) {
-              json.put("status", true);
+            if (GoogleApiAvailability.getInstance().isGooglePlayServicesAvailable(context) == com.google.android.gms.common.ConnectionResult.SUCCESS) {
+                json.put("status", false);
+            } else if (HuaweiApiAvailability.getInstance().isHuaweiMobileServicesAvailable(context) == ConnectionResult.SUCCESS) {
+                json.put("status", true);
             } else {
                 json.put("status", false);
             }
